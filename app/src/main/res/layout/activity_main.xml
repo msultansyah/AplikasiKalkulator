@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="MASUKKAN DUA ANGKA"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/tvJudul"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etAngkaPertama"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="number"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded,TextFields" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etAngkaKedua"
+        android:inputType="number"
+
+        android:hint="Masukkan Angka Kedua"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded,TextFields" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/llKedua"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="80dp"
+            android:id="@+id/btTambah"
+            android:text="+"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,InefficientWeight" />
+        <Button
+            android:layout_width="80dp"
+
+            android:id="@+id/btKurang"
+            android:text="-"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,InefficientWeight" />
+        <Button
+            android:layout_width="80dp"
+            android:id="@+id/btKali"
+            android:text="X"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
